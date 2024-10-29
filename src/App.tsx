@@ -1,40 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './navigation/NavBar'
+import ParagraphHeader from './content/helpers/ParagraphHeader'
+import Card from './content/Cards/Card'
+import CardList4by4 from './content/Cards/CardList4by4'
+import HorizontalGap4 from './content/helpers/HorizontalGap4'
+import HorizontalGap10 from './content/helpers/HorizontalGap10'
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-    <NavBar />
-    <h1 className="text-3xl font-bold underline">
-      Tailwind test
-    </h1>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <>
+            <HorizontalGap4 />
+            <NavBar />
+            <HorizontalGap10 />
+            <ParagraphHeader text='Technology used commercially (most important)' />
+            <HorizontalGap10 />
+            <CardList4by4>
+                <Card name='React' experience='3 years' svgPath='/src/assets/react.svg'/>
+                <Card name='C#' experience='12+ years' svgPath='/src/assets/csharp.svg'/>
+                <Card name='Sql Server' experience='8 years' svgPath='/src/assets/sqlserver.svg'/>
+                <Card name='PostgreSQL' experience='3 months' svgPath='/src/assets/postgresql.svg'/>
+                <Card name='Git' experience='6 years' svgPath='/src/assets/git.svg'/>
+                <Card name='.NET (in general)' experience='12+ years' svgPath='/src/assets/dotnet.svg'/>
+                <Card name='Typescript' experience='2 years' svgPath='/src/assets/typescript.svg'/>
+                <Card name='NodeJS' experience='2 years' svgPath='/src/assets/nodejs.svg'/>
+                <Card name='Docker' experience='2 years' svgPath='/src/assets/docker.svg'/>
+            </CardList4by4>
+            <HorizontalGap10 />
+            <ParagraphHeader text='Technology after hours' />
+            <HorizontalGap10 />
+
+
+            
+        </>
+    )
 }
 
 export default App
