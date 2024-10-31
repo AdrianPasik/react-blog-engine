@@ -14,10 +14,11 @@ function App() {
             <NavBar />
             <HorizontalGap4 />
             <ParagraphHeader text='About me:' />
+            <HorizontalGap10 />
             <div className='mx-auto max-w-7xl font-sans font-normal text-md text-gray-800 '>
                 <p>Fullstack software developer. Living in Poland, but I do projects across the EU. Experienced mostly in Microsoft tech stack but trying to explore NodeJS more. </p>
             </div>
-            <HorizontalGap4 />
+            <HorizontalGap10 />
             <ParagraphHeader text='Technology used commercially (most important):' />
             <HorizontalGap4 />
             <CardList4by4>
@@ -59,8 +60,6 @@ function App() {
                 <Card name='Germany' experience='' svgPath='/src/assets/germany.svg'/>
             </CardList4by4>
             <HorizontalGap10 />
-            <div id="contact"></div>
-            <ParagraphHeader text='How to reach me' />
 
 
 

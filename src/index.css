@@ -5,3 +5,27 @@
 body {
     background-color: rgb(241, 241, 241);
 }
+.lines {
+    display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.lines:before, .lines:after {
+    content: '';
+  flex-grow: 1;
+  height: 1px;
+  background: #ccc;
+  display: inline-block;
+  vertical-align: middle;
+}
+.lines:before {
+    margin-right: 2rem;
+}
+
+.lines:after {
+    margin-left: 2rem;
+}
+
+
