@@ -5,7 +5,7 @@ export default function Menu() {
                 <a className="relative text-neutral-900 items-center flex space-x-1 hover:text-neutral-600">
                     <span>Home</span>
                 </a>
-                <a className="relative text-neutral-900 items-center flex space-x-1 hover:text-neutral-600">
+                <a className="relative text-neutral-900 items-center flex space-x-1 hover:text-neutral-600" href="#contact">
                     <span>Contact info</span>
                 </a>
                 <a className="relative text-neutral-900 items-center flex space-x-1 hover:text-neutral-600">

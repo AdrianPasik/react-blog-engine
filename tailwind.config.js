@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+    fontFamily: {
+        'sans': ['Circular', 'Helvetica Neue', 'Helvetica', 'Arial', 'Seria Sans']
+    },
     extend: {},
   },
   plugins: [],
