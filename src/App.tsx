@@ -15,8 +15,11 @@ function App() {
             <HorizontalGap4 />
             <ParagraphHeader text='About me:' />
             <HorizontalGap10 />
-            <div className='mx-auto max-w-7xl font-sans font-normal text-md text-gray-800 '>
-                <p>Fullstack software developer. Living in Poland, but I do projects across the EU. Experienced mostly in Microsoft tech stack but trying to explore NodeJS more. </p>
+            <div className='mx-auto max-w-5xl font-sans font-normal text-lg text-gray-800 text-center'>
+                <p>
+                    Fullstack software developer. In 9-5 Mostly Microsoft technology but it is slowly moving towards NodeJS. 
+                    <br />
+                    Living in Poland, but I do projects across the EU.</p>
             </div>
             <HorizontalGap10 />
             <ParagraphHeader text='Technology used commercially (most important):' />
