@@ -14,7 +14,7 @@ function App() {
             <NavBar />
             <HorizontalGap4 />
             <ParagraphHeader text='About me:' />
-            <div className='mx-auto max-w-7xl'>
+            <div className='mx-auto max-w-7xl font-sans font-normal text-md text-gray-800 '>
                 <p>Fullstack software developer. Living in Poland, but I do projects across the EU. Experienced mostly in Microsoft tech stack but trying to explore NodeJS more. </p>
             </div>
             <HorizontalGap4 />

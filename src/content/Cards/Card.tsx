@@ -6,8 +6,8 @@ export default function Card({ name, experience, svgPath }: { name: string, expe
                     <img alt="React" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" className="size-8 " style={{ color: 'transparent' }} src={svgPath} />
                 </div>
                 <div>
-                    <h4 className="text-lg font-medium">{name}</h4>
-                    <p className="text-dark-200/70 dark:text-white/70 text-sm">{experience}
+                    <h4 className="text-lg font-medium font-sans text-gray-700">{name}</h4>
+                    <p className="text-dark-200/70 text-sm">{experience}
                     </p>
                 </div>
             </div>
