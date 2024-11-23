@@ -1,18 +1,17 @@
 import './App.css'
-import NavBar from './navigation/NavBar'
 import ParagraphHeader from './content/helpers/ParagraphHeader'
 import Card from './content/Cards/Card'
 import CardList4by4 from './content/Cards/CardList4by4'
 import HorizontalGap4 from './content/helpers/HorizontalGap4'
 import HorizontalGap10 from './content/helpers/HorizontalGap10'
 import CardList2by2 from './content/Cards/CardList2by2'
+import LinkCard from './content/Cards/LinkCard'
 
 function App() {
 
     return (
         <>
             <HorizontalGap4 />
-            <NavBar />
             <HorizontalGap4 />
             <ParagraphHeader text='About me:' />
             <HorizontalGap10 />
@@ -24,10 +23,12 @@ function App() {
             </div>
             <HorizontalGap10 />
             <ParagraphHeader text='Contact:' />
+            <HorizontalGap10 />
             <CardList2by2>
-                <Card name='Linked In' experience='Click to open' svgPath='/src/assets/linkedin.svg'/>
-                <Card name='Mail' experience='Click to reveal' svgPath='/src/assets/linkedin.svg'/>
+                <LinkCard name='Linked In' experience='Click to open' svgPath='/src/assets/linkedin.svg' address=''/>
+                <Card name='Mail' experience='Click to reveal' svgPath='/src/assets/mail.svg'/>
             </CardList2by2>
+            <HorizontalGap10 />
             <ParagraphHeader text='Technology used commercially (most important):' />
             <HorizontalGap4 />
             <CardList4by4>
