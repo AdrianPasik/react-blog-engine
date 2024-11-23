@@ -5,6 +5,7 @@ import Card from './content/Cards/Card'
 import CardList4by4 from './content/Cards/CardList4by4'
 import HorizontalGap4 from './content/helpers/HorizontalGap4'
 import HorizontalGap10 from './content/helpers/HorizontalGap10'
+import CardList2by2 from './content/Cards/CardList2by2'
 
 function App() {
 
@@ -22,6 +23,11 @@ function App() {
                     Living in Poland, but I do projects across the EU.</p>
             </div>
             <HorizontalGap10 />
+            <ParagraphHeader text='Contact:' />
+            <CardList2by2>
+                <Card name='Linked In' experience='Click to open' svgPath='/src/assets/linkedin.svg'/>
+                <Card name='Mail' experience='Click to reveal' svgPath='/src/assets/linkedin.svg'/>
+            </CardList2by2>
             <ParagraphHeader text='Technology used commercially (most important):' />
             <HorizontalGap4 />
             <CardList4by4>
