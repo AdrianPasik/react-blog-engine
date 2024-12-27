@@ -25,8 +25,8 @@ function App() {
             <ParagraphHeader text='Contact:' />
             <HorizontalGap10 />
             <CardList2by2>
-                <LinkCard name='Linked In' experience='Click to open' svgPath='/src/assets/linkedin.svg' address=''/>
-                <Card name='Mail' experience='Click to reveal' svgPath='/src/assets/mail.svg'/>
+                <LinkCard name='LinkedIn' experience='Click to open' svgPath='/src/assets/linkedin.svg' address=''/>
+                <Card name='GitHub' experience='Click to reveal' svgPath='/src/assets/mail.svg'/>
             </CardList2by2>
             <HorizontalGap10 />
             <ParagraphHeader text='Technology used commercially (most important):' />
