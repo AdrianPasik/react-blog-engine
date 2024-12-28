@@ -6,6 +6,30 @@ import HorizontalGap4 from './content/helpers/HorizontalGap4'
 import HorizontalGap10 from './content/helpers/HorizontalGap10'
 import CardList2by2 from './content/Cards/CardList2by2'
 import LinkCard from './content/Cards/LinkCard'
+import IconCsharp from './assets/csharp.svg'
+import IconGithub from './assets/github.svg'
+import IconLinkedIn from './assets/linkedin.svg'
+import IconDotnet from './assets/dotnet.svg'
+import IconSqlServer from './assets/sqlserver.svg'
+import IconAzure from './assets/azure.svg'
+import IconReact from './assets/react.svg'
+import IconTypescript from './assets/typescript.svg'
+import IconBlazor from './assets/blazor.svg'
+import IconNodeJS from './assets/nodejs.svg'
+import IconDocker from './assets/docker.svg'
+import IconPostgres from './assets/postgresql.svg'
+import IconGoogleCloud from './assets/gcloud.svg'
+import IconPython from './assets/python.svg'
+import IconNeuralNetworks from './assets/nn.svg'
+import IconRedis from './assets/redis.svg'
+import IconFinancial from './assets/financial.svg'
+import IconManufacturing from './assets/manufacturing.svg'
+import IconRealEstate from './assets/realestate.svg'
+import IconUS from './assets/us.svg';
+import IconGB from './assets/gb.svg';
+import IconDK from './assets/denmark.svg';
+import IconDE from './assets/germany.svg';
+
 
 function App() {
 
@@ -25,49 +49,49 @@ function App() {
             <ParagraphHeader text='Contact:' />
             <HorizontalGap10 />
             <CardList2by2>
-                <LinkCard name='LinkedIn' experience='Click to open' svgPath='/src/assets/linkedin.svg' address=''/>
-                <Card name='GitHub' experience='Click to reveal' svgPath='/src/assets/mail.svg'/>
+                <LinkCard name='LinkedIn' experience='disabled for a moment' svgPath={IconLinkedIn} />
+                <LinkCard name='GitHub' experience='disabled for a moment' svgPath={IconGithub} />
             </CardList2by2>
             <HorizontalGap10 />
             <ParagraphHeader text='Technology used commercially (most important):' />
             <HorizontalGap4 />
             <CardList4by4>
-                <Card name='.NET (whole ecosystem)' experience='12+ years' svgPath='/src/assets/dotnet.svg' />
-                <Card name='C#' experience='12+ years' svgPath='/src/assets/csharp.svg' />
-                <Card name='Sql Server' experience='8 years' svgPath='/src/assets/sqlserver.svg' />
-                <Card name='Azure (whole ecosystem)' experience='4 years' svgPath='/src/assets/azure.svg' />
-                <Card name='React' experience='3 years' svgPath='/src/assets/react.svg' />
-                <Card name='Typescript' experience='2 years' svgPath='/src/assets/typescript.svg' />
-                <Card name='Blazor' experience='2 years' svgPath='/src/assets/blazor.svg' />
-                <Card name='NodeJS' experience='2 years' svgPath='/src/assets/nodejs.svg' />
-                <Card name='Docker' experience='2 years' svgPath='/src/assets/docker.svg' />
-                <Card name='PostgreSQL' experience='3 months' svgPath='/src/assets/postgresql.svg' />
-                <Card name='Google Cloud' experience='3 months' svgPath='/src/assets/gcloud.svg' />
+                <Card name='.NET (whole ecosystem)' experience='12+ years' svgPath={IconDotnet} />
+                <Card name='C#' experience='12+ years' svgPath={IconCsharp} />
+                <Card name='Sql Server' experience='8 years' svgPath={IconSqlServer} />
+                <Card name='Azure (whole ecosystem)' experience='4 years' svgPath={IconAzure} />
+                <Card name='React' experience='3 years' svgPath={IconReact} />
+                <Card name='Typescript' experience='2 years' svgPath={IconTypescript} />
+                <Card name='Blazor' experience='2 years' svgPath={IconBlazor} />
+                <Card name='NodeJS' experience='2 years' svgPath={IconNodeJS} />
+                <Card name='Docker' experience='2 years' svgPath={IconDocker} />
+                <Card name='PostgreSQL' experience='3 months' svgPath={IconPostgres} />
+                <Card name='Google Cloud' experience='3 months' svgPath={IconGoogleCloud} />
             </CardList4by4>
             <HorizontalGap10 />
             <ParagraphHeader text='Technology after hours:' />
             <CardList4by4>
-                <Card name='React' experience='' svgPath='/src/assets/react.svg' />
-                <Card name='Python' experience='' svgPath='/src/assets/python.svg' />
-                <Card name='NodeJS' experience='' svgPath='/src/assets/nodejs.svg' />
-                <Card name='Neural Networks' experience='' svgPath='/src/assets/nn.svg' />
-                <Card name='PostgreSQL' experience='' svgPath='/src/assets/postgresql.svg' />
-                <Card name='Redis' experience='' svgPath='/src/assets/redis.svg' />
+                <Card name='React' experience='' svgPath={IconReact} />
+                <Card name='Python' experience='' svgPath={IconPython} />
+                <Card name='NodeJS' experience='' svgPath={IconNodeJS}/>
+                <Card name='Neural Networks' experience='' svgPath={IconNeuralNetworks} />
+                <Card name='PostgreSQL' experience='' svgPath={IconPostgres} />
+                <Card name='Redis' experience='' svgPath={IconRedis} />
             </CardList4by4>
             <ParagraphHeader text='Worked in industries:' />
             <HorizontalGap4 />
             <CardList4by4>
-                <Card name='Banking industry' experience='' svgPath='/src/assets/financial.svg'/>
-                <Card name='Real estate' experience='' svgPath='/src/assets/realestate.svg'/>
-                <Card name='Manufacturing' experience='' svgPath='/src/assets/manufacturing.svg'/>
+                <Card name='Banking industry' experience='' svgPath={IconFinancial}/>
+                <Card name='Real estate' experience='' svgPath={IconRealEstate}/>
+                <Card name='Manufacturing' experience='' svgPath={IconManufacturing}/>
             </CardList4by4>
             <ParagraphHeader text='On markets:' />
             <HorizontalGap4 />
             <CardList4by4>
-                <Card name='USA' experience='' svgPath='/src/assets/us.svg'/>
-                <Card name='Denmark' experience='' svgPath='/src/assets/denmark.svg'/>
-                <Card name='Great Britain' experience='' svgPath='/src/assets/gb.svg'/>
-                <Card name='Germany' experience='' svgPath='/src/assets/germany.svg'/>
+                <Card name='USA' experience='' svgPath={IconUS}/>
+                <Card name='Denmark' experience='' svgPath={IconDK}/>
+                <Card name='Great Britain' experience='' svgPath={IconGB}/>
+                <Card name='Germany' experience='' svgPath={IconDE}/>
             </CardList4by4>
             <HorizontalGap10 />
 
